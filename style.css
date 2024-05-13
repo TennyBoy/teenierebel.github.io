@@ -31,7 +31,7 @@ body {
 
 
 #navBackground {
-    background-color: rgb(225, 225, 225);
+    background-color: rgb(0, 0, 0);
     position: fixed;
     width: 100%;
     top: 0;
@@ -42,6 +42,7 @@ body {
 nav {
     width: 90%;
     z-index: 1;
+    display: none;
 }
 
 ul {
@@ -70,6 +71,10 @@ li:hover {
     -o-transform: translateY(-2px);
 }
 
+li .navA:hover {
+    color: rgb(0, 0, 0);
+}
+
 nav a {
     display: inline-block;
     padding: 10px;
@@ -78,7 +83,7 @@ nav a {
 .navA {
     text-decoration: none;
     text-transform: uppercase;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 
@@ -139,7 +144,7 @@ main {
 }
 
 #heroButtons {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     gap: 150px;
@@ -150,11 +155,11 @@ main {
 .heroButtons {
     text-decoration: none;
     background-color: transparent;
-    color: rgb(225, 225, 225);
-    border: 2px solid rgb(225, 225, 225);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
     border-radius: 5%;
     padding: 10px;
-    box-shadow: rgb(225, 225, 225) 0 0 15px;
+    box-shadow: rgb(255,255,255) 0 0 15px;
     transition: transform 0.3s;
     -webkit-transition: transform 0.3s;
     -moz-transition: transform 0.3s;
