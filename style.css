@@ -42,7 +42,6 @@ body {
 nav {
     width: 90%;
     z-index: 1;
-    display: none;
 }
 
 ul {
@@ -144,7 +143,7 @@ main {
 }
 
 #heroButtons {
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     gap: 150px;
