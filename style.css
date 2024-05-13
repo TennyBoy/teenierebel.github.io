@@ -3,6 +3,15 @@
     padding: 0;
 }
 
+/*
+colors:
+rgb(0,0,0)
+rgb(255,255,255)
+rgb(217,184,217)
+rgb(253,255,193)
+rgb(185,218,169)
+*/
+
 body {
     color: white;
 
@@ -16,7 +25,7 @@ body {
 }
 
 .container {
-    border: 1px solid red;
+    border: 1px none red;
 }
 
 
@@ -52,8 +61,8 @@ li{
 }
 
 li:hover {
-    background-color: yellow;
-    box-shadow: yellow 0 2px;
+    background-color: rgb(253, 255, 193);
+    box-shadow: rgb(253, 255, 193) 0 2px;
     transform: translateY(-2px);
     -webkit-transform: translateY(-2px);
     -moz-transform: translateY(-2px);
@@ -75,32 +84,95 @@ nav a {
 
 
 main {
-    height: 100vh;
+    
 }
 
 #heroBackground {
     background-image: url(Ellie1.jpg);
     background-repeat: none;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
+    height: 100vh;
 }
 
 #hero {
     width: 90%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    transform: translateY(250px);
-    -webkit-transform: translateY(250px);
-    -moz-transform: translateY(250px);
-    -ms-transform: translateY(250px);
-    -o-transform: translateY(250px);
+    position: relative;
+    top: 40vh;
 }
 
 #content {
+    user-select: none;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#heroH5 {
+    text-align: left;
+    font-size: 12px;
+
+    
+
+    padding-bottom: 10px;
+}
+
+#heroH1 {
     text-align: center;
+    font-size: 100px;
+    color: rgb(217,184,217);
+}
+
+#heroH6 {
+    text-align: left;
+    font-size: 18px;
+
+    color: rgb(185,218,169);
+
+    padding-top: 10px;
+}
+
+#heroButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.heroButtons {
+    text-decoration: none;
+    background-color: transparent;
+    color: rgb(225, 225, 225);
+    border: 2px solid rgb(225, 225, 225);
+    border-radius: 5%;
+    padding: 10px;
+    box-shadow: rgb(225, 225, 225) 0 0 15px;
+    transition: transform 0.3s;
+    -webkit-transition: transform 0.3s;
+    -moz-transition: transform 0.3s;
+    -ms-transition: transform 0.3s;
+    -o-transition: transform 0.3s;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+}
+
+.heroButtons:hover {
+    background-color: rgb(185,218,169);
+    color: rgb(0, 0, 0);
+    box-shadow: rgb(185,218,169) 0 0 30px;
+    transform: translateY(-2px);
+    -webkit-transform: translateY(-2px);
+    -moz-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    -o-transform: translateY(-2px);
 }
