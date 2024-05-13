@@ -4,10 +4,6 @@
 }
 
 body {
-    background-image: url(Ellie1.jpg);
-    background-repeat: none;
-    background-position: center;
-    background-size: contain;
     color: white;
 
     height: 100vh;
@@ -20,7 +16,7 @@ body {
 }
 
 .container {
-    border: 1px none red;
+    border: 1px solid red;
 }
 
 
@@ -36,6 +32,7 @@ body {
 
 nav {
     width: 90%;
+    z-index: 1;
 }
 
 ul {
@@ -78,14 +75,14 @@ nav a {
 
 
 main {
-    
+    height: 100vh;
 }
 
 #heroBackground {
-    /*background-image: url(Ellie1.jpg);
+    background-image: url(Ellie1.jpg);
     background-repeat: none;
     background-position: center;
-    background-size: contain;*/
+    background-size: contain;
 }
 
 #hero {
